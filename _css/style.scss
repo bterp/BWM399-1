@@ -1,25 +1,36 @@
 // SASS VARIABLES
 
-$base_color: #325C38;
-$background_color: #ADCBAC;
 $default-font: Helvetica, sans-serif;
 $default-size: 16px;
 $hover-color: #E4EBE3;
+$base_color: #325C38;
+$background_color: lighten($base_color, 40);
+$body_color: lighten($base_color, 50);
+$text_color: darken($base_color, 5);
 
 
 body{
-background-color: #E4EBE3;
+background-color: $body_color;
 font: $default-font $default-size;
 }
 
-h1, h2, h3, p, a{
-color:$base_color;
-}
-
-h1, h2, h3, p {
+h1, h2, h3, p,{
 display:block; 
 margin-left: 10%;
 margin-right: 10%;
+color:$text_color;
+}
+
+h1 {
+font: {
+    family: sans-serif;
+    size: 2em;
+    weight: bold;
+    }
+}
+
+a{
+color:$base_color;
 }
 
 form{
@@ -47,19 +58,21 @@ width: 60%;
     padding:0;
     text-align:center;
     background-color: $background_color;
-}
-.nav li{
+
+    li{
     display:inline;
-}
-.nav a{
+    }
+    
+    a{
 	text-decoration: none;
 	color: #3E703C;
     display:inline-block;
     padding: 10px 15px 10px 15px;
-}
+    }
 
-.nav a:hover{
+    a:hover{
 	color: $hover-color;
+    }
 }
 
 img {
