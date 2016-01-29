@@ -1,5 +1,4 @@
-// SASS VARIABLES
-
+// SASS VARIABLES AND BUILT IN FUNCTIONS
 $default-font: Helvetica, sans-serif;
 $default-size: 16px;
 $hover-color: #E4EBE3;
@@ -8,25 +7,37 @@ $background_color: lighten($base_color, 40);
 $body_color: lighten($base_color, 50);
 $text_color: darken($base_color, 5);
 
+// SASS MIXIN
+@mixin headertwo($size, $color: white) {
+  color: $color;
+  font-size: $size;
+}
 
 body{
 background-color: $body_color;
 font: $default-font $default-size;
 }
 
-h1, h2, h3, p,{
+p {
 display:block; 
 margin-left: 10%;
 margin-right: 10%;
 color:$text_color;
 }
 
+// SASS EXTEND AND PROPERTY NESTING
 h1 {
+@extend p;
 font: {
     family: sans-serif;
     size: 2em;
     weight: bold;
     }
+}
+
+// SASS INCLUDE WITH MIXIN
+h2 {
+  @include headertwo($color: green, $size: 32px);
 }
 
 a{
@@ -52,6 +63,7 @@ padding: 20px;
 width: 60%;
 }
 
+// SASS NESTING SELECTOR
 .nav{
     list-style:none;
     margin:0;
