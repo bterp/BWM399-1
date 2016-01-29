@@ -20,8 +20,8 @@ font: $default-font $default-size;
 
 p {
 display:block; 
-margin-left: 10%;
-margin-right: 10%;
+margin-left: 8px / 32px * 100%;
+margin-right: 8px / 32px * 100%;
 color:$text_color;
 }
 
@@ -60,7 +60,7 @@ margin-left: auto;
 margin-right: auto;
 background-color: #BFDFBE;
 padding: 20px;
-width: 60%;
+width: 800px / 960px * 100%;
 }
 
 // SASS NESTING SELECTOR
