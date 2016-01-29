@@ -1,0 +1,75 @@
+body{
+background-color: #E4EBE3;}
+
+h1, h2, h3, p, a{
+color:#325C38;
+}
+
+h1, h2, h3, p {
+display:block; 
+margin-left: 10%;
+margin-right: 10%;
+}
+
+form{
+color: #325C38;
+display:block; 
+margin-left: 10%;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+container{
+display:block; 
+margin-top: 5%;
+margin-left: auto;
+margin-right: auto;
+background-color: #BFDFBE;
+padding: 20px;
+width: 60%;
+}
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #ADCBAC;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+	text-decoration: none;
+	color: #3E703C;
+    display:inline-block;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav a:hover{
+	color: #E4EBE3;
+}
+
+img {
+	display:block; 
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+footer {
+    padding:1px 1px 1px 1px;
+    text-align:center;
+    background-color: #ADCBAC;
+}
+
+input, select, .input {
+	color: #325C38;
+}
+
+.img {
+float: left;
+}
+
+
